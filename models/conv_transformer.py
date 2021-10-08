@@ -151,7 +151,7 @@ class Transformer(nn.Module):
 
 class ConvTransformer(nn.Module):
     def __init__(self, input_nc, n_downsampling, depth, heads, proj_kernel=3,
-                 mlp_mult=4, dropout=0., ngf=32):
+                 mlp_mult=4, dropout=0., ngf=16):
 
         super().__init__()
         dim = (2 ** n_downsampling) * ngf

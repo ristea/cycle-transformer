@@ -6,7 +6,7 @@ from .base_model import BaseModel
 from . import networks
 
 
-class CycleTransformerModel(BaseModel):
+class CyTranModel(BaseModel):
     @staticmethod
     def modify_commandline_options(parser, is_train=True):
         """Add new dataset-specific options, and rewrite default values for existing options.
@@ -59,9 +59,9 @@ class CycleTransformerModel(BaseModel):
 
         # define networks (both Generators and discriminators)
         self.netG_A = ConvTransformer(input_nc=opt.input_nc, n_downsampling=opt.n_downsampling, depth=opt.depth,
-                             heads=opt.heads, dropout=opt.dropout, ngf=opt.ngf_cvt).to(opt.device)
+                             heads=opt.heads, dropout=opt.dropout, ngf=opt.ngf_cytran).to(opt.device)
         self.netG_B = ConvTransformer(input_nc=opt.input_nc, n_downsampling=opt.n_downsampling, depth=opt.depth,
-                             heads=opt.heads, dropout=opt.dropout, ngf=opt.ngf_cvt).to(opt.device)
+                             heads=opt.heads, dropout=opt.dropout, ngf=opt.ngf_cytran).to(opt.device)
 
         if self.isTrain:  # define discriminators
             self.netD_A = networks.define_D(opt.output_nc, opt.ndf, opt.netD, opt.n_layers_D, opt.norm, opt.init_type, opt.init_gain, self.gpu_ids)

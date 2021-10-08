@@ -11,8 +11,10 @@ from options.train_options import TrainOptions
 
 
 @torch.no_grad()
-def compute_eval_metrics_gan(root_path, tagA='VENOUS', tagB='NATIVE', device='cpu'):
-    opt = TrainOptions().parse()   # get training options0
+def compute_eval_metrics_gan(root_path, tagA='ARTERIAL', tagB='NATIVE', device='cpu'):
+    # root_path - is the path to the raw Coltea-Lung-CT-100W data set.
+
+    opt = TrainOptions().parse()
     opt.load_iter = 40
     opt.isTrain = False
     opt.device = device
@@ -22,7 +24,7 @@ def compute_eval_metrics_gan(root_path, tagA='VENOUS', tagB='NATIVE', device='cp
     gen = model.netG_A
     gen.eval()
 
-    eval_dirs = pd.read_csv(os.path.join(root_path, 'eval_data.csv'))
+    eval_dirs = pd.read_csv(os.path.join(root_path, 'test_data.csv'))
     eval_dirs = list(eval_dirs.iloc[:, 1])
 
     mae_pre = []
@@ -32,7 +34,7 @@ def compute_eval_metrics_gan(root_path, tagA='VENOUS', tagB='NATIVE', device='cp
     ssim_pre = []
     ssim_post = []
 
-    for path in glob.glob(os.path.join(root_path, 'CT-Coltea-DB/*')):
+    for path in glob.glob(os.path.join(root_path, 'Coltea-Lung-CT-100W/*')):
         if not path.split('/')[-1] in eval_dirs:
             continue
 
@@ -79,6 +81,6 @@ def compute_eval_metrics_gan(root_path, tagA='VENOUS', tagB='NATIVE', device='cp
 
 if __name__ == '__main__':
     compute_eval_metrics_gan(
-        root_path='/home/radu/Downloads/CT-Coltea-DB-v2/',
+        root_path='/path/to/data/set/',
         device='cuda'
     )

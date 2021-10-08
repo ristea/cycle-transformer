@@ -37,7 +37,7 @@ class TrainOptions(BaseOptions):
         parser.add_argument('--lr_decay_iters', type=int, default=50, help='multiply by a gamma every lr_decay_iters iterations')
 
         # transformer parameters
-        parser.add_argument('--ngf_cvt', type=int, default=32, help='number of down')
+        parser.add_argument('--ngf_cytran', type=int, default=16, help='number of down')
         parser.add_argument('--n_downsampling', type=int, default=3, help='number of down')
         parser.add_argument('--depth', type=int, default=3, help='number of down')
         parser.add_argument('--heads', type=int, default=6, help='number of down')
