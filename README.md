@@ -10,7 +10,7 @@ lung CT scans (with a total of 37,290 images) collected from 100 female patients
 ![map](resources/cytran_figure.png)
 
 -----------------------------------------
-## Code
+## Code for CyTran
 
 We provide the code to reproduce our results for CT style transfer. 
 The data set must be downloaded and preprocessed. 
@@ -20,9 +20,7 @@ In the test.py script is the evaluation code.
 The code is similar with CycleGan-and-pix2pix and could be used for any data sets (e.g. horse to zebra, cityscape).
 The scripts to download other data sets are in scripts directory.
 
-
-
-## Coltea-Lung-CT-100W data set
+## Coltea-Lung-CT-100W Data Set
 
 ![map](resources/ct_examples.png)
 
@@ -36,14 +34,14 @@ but the number of slices may differ from one patient to another.
 We split our data set into three subsets, one for training (75 scans), one for validation (15 scans), 
 and one for testing (15 scans). Our data set is stored as anonymized raw DICOM files.
 
-It could be downloaded from: TBA
+**Coltea-Lung-CT-100W** can be downloaded from: (link will be released after the acceptance of the submitted manuscript)
 
 ## Prerequisites
 - Python > 3.6
 - PyTorch 1.7.x
 - CPU or NVIDIA GPU + CUDA CuDNN
 
-## Cite us
+## Citation
 
 TBA
 
@@ -56,4 +54,4 @@ TBA
 r.catalin196@yahoo.ro, raducu.ionescu@gmail.com
 
 ### Last Update:
-October 8, 2021
+October 13th, 2021
