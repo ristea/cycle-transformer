@@ -43,7 +43,15 @@ and one for testing (15 scans). Our data set is stored as anonymized raw DICOM f
 
 ## Citation
 
-TBA
+BibTeX:
+
+    @article{Ristea-CyTran-2021,
+      title={CyTran: Cycle-Consistent Transformers for Non-Contrast to Contrast CT Translation},
+      author={Ristea, Nicolae-C{\u{a}}t{\u{a}}lin and Miron, Andreea-Iuliana and Savencu, Olivian and Georgescu, Mariana-Iuliana and Verga, Nicolae and Khan, Fahad Shahbaz and Ionescu, Radu Tudor},
+      journal={arXiv preprint arXiv:2110.06400},
+      year={2021}
+    }
+
 
 ## Related Projects
 [cyclegan-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) |
@@ -54,4 +62,4 @@ TBA
 r.catalin196@yahoo.ro, raducu.ionescu@gmail.com
 
 ### Last Update:
-October 13th, 2021
+October 20th, 2021
