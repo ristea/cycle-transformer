@@ -31,7 +31,7 @@ A triphasic scan is formed of a native (non-contrast) scan, an early portal veno
 In our data set, the three CT scans forming a triphasic scan always have the same number of slices, 
 but the number of slices may differ from one patient to another. 
 
-We split our data set into three subsets, one for training (75 scans), one for validation (15 scans), 
+We split our data set into three subsets, one for training (70 scans), one for validation (15 scans), 
 and one for testing (15 scans). Our data set is stored as anonymized raw DICOM files.
 
 **Coltea-Lung-CT-100W** can be downloaded from: (link will be released after the acceptance of the submitted manuscript)
