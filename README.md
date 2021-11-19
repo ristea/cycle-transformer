@@ -12,7 +12,7 @@ lung CT scans (with a total of 37,290 images) collected from 100 female patients
 -----------------------------------------
 ## License
 
-this code is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+This code is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ## Code for CyTran
 
