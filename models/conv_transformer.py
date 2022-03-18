@@ -1,3 +1,5 @@
+# This code is released under the CC BY-SA 4.0 license.
+
 from einops import rearrange
 from torch import nn, einsum
 import functools

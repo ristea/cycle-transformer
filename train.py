@@ -1,3 +1,5 @@
+# This code is released under the CC BY-SA 4.0 license.
+
 import time
 from options.train_options import TrainOptions
 from data import create_dataset

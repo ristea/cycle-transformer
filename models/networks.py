@@ -1,3 +1,5 @@
+# This code is released under the CC BY-SA 4.0 license.
+
 import torch
 import torch.nn as nn
 from torch.nn import init
