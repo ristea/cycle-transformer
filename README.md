@@ -1,4 +1,4 @@
-#  CyTran: Cycle-Consistent Transformers for Non-Contrast to Contrast CT Translation (Accepted in Neurocomputing)                                                                                   
+#  CyTran: A Cycle-Consistent Transformer with Multi-Level Consistency for Non-Contrast to Contrast CT Translation (Accepted in Neurocomputing)                                                                                   
 
 We propose a novel approach to translate unpaired contrast computed tomography (CT) scans 
 to non-contrast CT scans and the other way around. 
