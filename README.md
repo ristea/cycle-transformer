@@ -1,4 +1,4 @@
-#  CyTran: Cycle-Consistent Transformers for Non-Contrast to Contrast CT Translation                                                                                    
+#  CyTran: Cycle-Consistent Transformers for Non-Contrast to Contrast CT Translation (Accepted in Neurocomputing)                                                                                   
 
 We propose a novel approach to translate unpaired contrast computed tomography (CT) scans 
 to non-contrast CT scans and the other way around. 
@@ -12,7 +12,7 @@ lung CT scans (with a total of 37,290 images) collected from 100 female patients
 -----------------------------------------
 ## License
 
-This code is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+This code and data set is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ## Code for CyTran
 
@@ -38,7 +38,7 @@ but the number of slices may differ from one patient to another.
 We split our data set into three subsets, one for training (70 scans), one for validation (15 scans), 
 and one for testing (15 scans). Our data set is stored as anonymized raw DICOM files.
 
-**Coltea-Lung-CT-100W** can be downloaded from: (link will be released after the acceptance of the submitted manuscript)
+**Coltea-Lung-CT-100W** can be downloaded from [here](https://drive.google.com/file/d/soon/view?usp=sharing).
 
 ## Prerequisites
 - Python > 3.6
@@ -49,11 +49,12 @@ and one for testing (15 scans). Our data set is stored as anonymized raw DICOM f
 
 BibTeX:
 
-    @article{Ristea-CyTran-2021,
+    @article{Ristea-CyTran-2023,
       title={CyTran: Cycle-Consistent Transformers for Non-Contrast to Contrast CT Translation},
       author={Ristea, Nicolae-C{\u{a}}t{\u{a}}lin and Miron, Andreea-Iuliana and Savencu, Olivian and Georgescu, Mariana-Iuliana and Verga, Nicolae and Khan, Fahad Shahbaz and Ionescu, Radu Tudor},
-      journal={arXiv preprint arXiv:2110.06400},
-      year={2021}
+      journal={Neurocomputing},
+      year={2023},
+      doi={10.1016/j.neucom.2023.03.072}
     }
 
 
