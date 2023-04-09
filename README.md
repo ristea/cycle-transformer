@@ -38,7 +38,7 @@ but the number of slices may differ from one patient to another.
 We split our data set into three subsets, one for training (70 scans), one for validation (15 scans), 
 and one for testing (15 scans). Our data set is stored as anonymized raw DICOM files.
 
-**Coltea-Lung-CT-100W** can be downloaded from [here](https://drive.google.com/file/d/soon/view?usp=sharing).
+**Coltea-Lung-CT-100W** can be downloaded from [here](https://drive.google.com/file/d/1wCqysjTuuKbwx05qFheXU_oiCTDv80Ai/view?usp=sharing).
 
 ## Prerequisites
 - Python > 3.6
@@ -65,6 +65,3 @@ BibTeX:
 
 ## You can send your questions or suggestions to: 
 r.catalin196@yahoo.ro, raducu.ionescu@gmail.com
-
-### Last Update:
-October 20th, 2021
